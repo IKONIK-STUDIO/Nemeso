@@ -1,5 +1,10 @@
 import ollama
 import sys
-import modelManager
+from tools import modelManager
+import subprocess
+
+ollamaTerminal = subprocess.Popen(["ollama", "serve"])
 
 modelManager.modelManager()
+
+ollamaTerminal.terminate()
