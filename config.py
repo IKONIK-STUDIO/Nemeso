@@ -1,1 +1,1 @@
-MODEL = ""
+MODEL = "" # model you want to chat with
